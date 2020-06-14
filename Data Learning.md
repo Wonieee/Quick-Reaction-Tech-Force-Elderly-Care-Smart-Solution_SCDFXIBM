@@ -1,6 +1,6 @@
-#The Data Learning CSV
+# The Data Learning CSV
 
-##Instructions 
+## Instructions 
 Create a IBM watson Services under the catalog
 Create a new project
 Click add to project, select "Smart AI"
