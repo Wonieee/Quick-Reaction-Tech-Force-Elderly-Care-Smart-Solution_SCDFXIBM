@@ -1,0 +1,523 @@
+{
+  "intents": [
+    {
+      "intent": "not-safe-description",
+      "examples": [
+        {
+          "text": "my chest hurts"
+        },
+        {
+          "text": "I cannot move"
+        },
+        {
+          "text": "i cannot breathe"
+        },
+        {
+          "text": "heart pain"
+        },
+        {
+          "text": "I fell down"
+        },
+        {
+          "text": "I am stuck"
+        },
+        {
+          "text": "i can't stand by myself"
+        },
+        {
+          "text": "i cannot stand"
+        },
+        {
+          "text": "my leg hurst"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "safe",
+      "examples": [
+        {
+          "text": "Yes I am okay"
+        },
+        {
+          "text": "I'm safe"
+        },
+        {
+          "text": "Yes, I am fine"
+        },
+        {
+          "text": "Yes, I am good"
+        },
+        {
+          "text": "Yes, I am safe"
+        },
+        {
+          "text": "Yes I am OK"
+        },
+        {
+          "text": "I'm good"
+        },
+        {
+          "text": "I'm alright"
+        },
+        {
+          "text": "OK"
+        },
+        {
+          "text": "yes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "instruction",
+      "examples": [
+        {
+          "text": "What to do?"
+        },
+        {
+          "text": "How to help?"
+        },
+        {
+          "text": "How can I help?"
+        },
+        {
+          "text": "How do I help?"
+        },
+        {
+          "text": "What do I do?"
+        },
+        {
+          "text": "What should I do?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "not-safe",
+      "examples": [
+        {
+          "text": "I'm not okay"
+        },
+        {
+          "text": "I need help"
+        },
+        {
+          "text": "I am in pain"
+        },
+        {
+          "text": "No, I'm not fine"
+        },
+        {
+          "text": "No, I'm not okay"
+        },
+        {
+          "text": "I'm hurt"
+        },
+        {
+          "text": "I'm injured"
+        },
+        {
+          "text": "I'm not ok"
+        },
+        {
+          "text": "I fell down"
+        },
+        {
+          "text": "I hurt myself"
+        },
+        {
+          "text": "call 995"
+        },
+        {
+          "text": "call help"
+        },
+        {
+          "text": "call ambulance"
+        },
+        {
+          "text": "No"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "safe-description",
+      "examples": [
+        {
+          "text": "I was climbing up the stairs"
+        },
+        {
+          "text": "I was jogging"
+        },
+        {
+          "text": "I am jogging"
+        },
+        {
+          "text": "I was surprised"
+        },
+        {
+          "text": "nothing"
+        },
+        {
+          "text": "Nothing in particular happened"
+        },
+        {
+          "text": "I was watching TV"
+        },
+        {
+          "text": "I was washing the dishes"
+        },
+        {
+          "text": "I was just walking"
+        },
+        {
+          "text": "i am sitting"
+        },
+        {
+          "text": "i am sitting down"
+        },
+        {
+          "text": "nothing happened"
+        },
+        {
+          "text": "yeah nothing happened"
+        },
+        {
+          "text": "yeah everything is ok"
+        },
+        {
+          "text": "yeah no problem"
+        },
+        {
+          "text": "yes no issue"
+        },
+        {
+          "text": "I am just exercising"
+        },
+        {
+          "text": "I was exercising"
+        },
+        {
+          "text": "I'm exercising"
+        },
+        {
+          "text": "I'm working out"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "reply",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "not now",
+            "not at this time",
+            "nope",
+            "i think not",
+            "dont think so",
+            "don't think so",
+            "definitely not"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": [
+            "yes",
+            "yeap",
+            "yeah",
+            "right",
+            "yep",
+            "sure",
+            "ok",
+            "definitely",
+            "absolutely"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "not-safe",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "not safe",
+          "synonyms": [
+            "help",
+            "injured",
+            "hurt",
+            "fall",
+            "not ok",
+            "pain"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "safe",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "safe",
+          "synonyms": [
+            "good",
+            "ok",
+            "okay",
+            "alright",
+            "well",
+            "fine"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Need Assistant",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, alerting CFRs"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1592022919894",
+      "conditions": "@reply:yes",
+      "dialog_node": "node_4_1592025121381",
+      "previous_sibling": "node_10_1592024999205"
+    },
+    {
+      "type": "standard",
+      "title": "No Need Assistant",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, have a good day!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1592022919894",
+      "conditions": "@reply:no",
+      "dialog_node": "node_10_1592024999205"
+    },
+    {
+      "type": "standard",
+      "title": "Not Safe",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'm calling for 995 now. What happened?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "#not-safe || @not-safe",
+      "dialog_node": "node_2_1592019906684",
+      "previous_sibling": "node_6_1592019618153"
+    },
+    {
+      "type": "standard",
+      "title": "Elderly is safe",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What happened?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "#safe || @safe",
+      "dialog_node": "node_6_1592019618153"
+    },
+    {
+      "type": "standard",
+      "title": "Elderly describes the incident",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, recording and transmitting your response"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1592019906684",
+      "conditions": "#not-safe-description",
+      "dialog_node": "node_9_1592023368492"
+    },
+    {
+      "type": "standard",
+      "title": "Elderly describes false alarm",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "OK, do you need help?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1592019618153",
+      "conditions": "#safe-description",
+      "dialog_node": "node_3_1592022919894"
+    },
+    {
+      "type": "standard",
+      "title": "Request for Instructions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "If you are not alone, ask another person to get an AED device. Firstly, check for breathing. If the person is not breathing, administer CPR. To do so, push down at least 2 inches at a rate of 100 to 120 pushes a minute in the centre of the chest, allowing the chest to come back up to its normal position after each push. Once the AED arrives, turn it on and follow the instructions. Continue administering CPR until the person starts to breathe or move, or until the emergency team arrives."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#instruction",
+      "dialog_node": "node_1_1592043682235",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Pause 5s",
+      "output": {
+        "generic": [
+          {
+            "time": 5000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "5s has elapse, activating emergency protocol"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$",
+      "dialog_node": "node_6_1592034984512",
+      "previous_sibling": "node_1_1592043682235"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please repeat yourself."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_6_1592034984512",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Are you OK?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Medical Emergency Response",
+  "language": "en",
+  "description": ""
+}
