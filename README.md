@@ -19,7 +19,7 @@ A group of 5 university students with passion to leverage on technology to make 
 As Singapore is facing a growing aging population, elderly living alone with no next of kin is of high risk of experiencing critical life emergencies without being able to get immediate help. Such emergencies include cardiac arrest, heart attack, and injuries like falling down. In this project, we aim to reduce the gap between the onset of the incidents and the mobilisation of CFRs and other emergency responders, by leveraging on IBM Cloud and IoT. We propose on creating a 3 part solution consisting of a smartwatch, machine learning algorithm, and a chatbot - the Elderly Care Smart Solution, which will help to increase the likelihood of the elderly receiving timely help and save precious lives.
 
 ## Demo Video
-<youtube link>
+https://youtu.be/aCYjLmXBKUI
   
 ## The Architecture
 ![Screenshot](Architecture.jpg)
