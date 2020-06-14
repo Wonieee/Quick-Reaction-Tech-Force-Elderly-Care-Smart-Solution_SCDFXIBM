@@ -22,19 +22,21 @@ As Singapore is facing a growing aging population, elderly living alone with no 
 <youtube link>
   
 ## The Architecture
-![Screenshot](Architecture.jpg)
+![Screenshot](Architecture.png)
 
 ## Details of Solution
 ![Screenshot](details.png)
 
 ## Getting started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. The Instructions can be found in the folder 'code'.
 
 ### Prerequisites
 The things needed to carry on with the project
 ```bash
 IBM Cloud Account
+chatbot - flask
+watch - reactjs
 ```
 
 ## Built with
