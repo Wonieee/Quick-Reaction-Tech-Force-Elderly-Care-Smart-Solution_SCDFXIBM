@@ -22,7 +22,7 @@ As Singapore is facing a growing aging population, elderly living alone with no 
 <youtube link>
   
 ## The Architecture
-![Screenshot](Architecture.png)
+![Screenshot](Architecture.jpg)
 
 ## Details of Solution
 ![Screenshot](details.png)
