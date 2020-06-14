@@ -22,7 +22,7 @@ As Singapore is facing a growing aging population, elderly living alone with no 
 <youtube link>
   
 ## The Architecture
-![Screenshot](Architecture.png)
+![Screenshot](Architecture.jpg)
 
 ## Details of Solution
 ![Screenshot](details.png)
@@ -40,9 +40,10 @@ watch - reactjs
 ```
 
 ## Built with
-* [IBM Watson Studio](https://cloud.ibm.com/catalog?search=watson%20studio#search_results) - The SmartAI Datalearning used
-* [IBM Auto AI] (https://www.ibm.com/sg-en/cloud/watson-studio/autoai) - For machine learning
+* [IBM Watson Studio and Auto AI](https://cloud.ibm.com/catalog?search=watson%20studio#search_results) - The SmartAI Datalearning used
 * [IBM Watson Assistant] (https://www.ibm.com/cloud/watson-assistant/) - For chatbot
+* Flask
+* React.js
 * [IBM Speech to Text](https://cloud.ibm.com/catalog?search=text%20to%20speech#search_results) - For converting speech to Text
 * [IBM Text to Speech](https://cloud.ibm.com/catalog?search=text%20to%20speech#search_results) - For converting Text to speech
 
