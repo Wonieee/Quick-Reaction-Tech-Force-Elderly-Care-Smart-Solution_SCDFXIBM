@@ -25,7 +25,7 @@ As Singapore is facing a growing aging population, elderly living alone with no 
 
 
 ## Details of Solution
-IBM Hackathon - Workflow.png
+![Alt text](relative/path/to/details.png?raw=true "Title")
 
 ## Getting started
 
