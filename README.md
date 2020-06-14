@@ -33,6 +33,10 @@ IBM Cloud Account
 * [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
 * [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
 * [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
+* [IBM Watson Studio](https://cloud.ibm.com/catalog?search=watson%20studio#search_results) - The SmartAI Datalearning used
+* [IBM Speech to Text](https://cloud.ibm.com/catalog?search=text%20to%20speech#search_results) - For converting speech to Text
+* [IBM Text to Speech](https://cloud.ibm.com/catalog?search=text%20to%20speech#search_results) - For converting Text to speech
+
 
 ## Authors
 The list of people who participated in this project
