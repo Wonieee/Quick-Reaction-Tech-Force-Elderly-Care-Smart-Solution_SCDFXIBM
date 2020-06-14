@@ -1,1 +1,1 @@
-## This Folder Contains the Scenario Videos
+## This Folder Contains the Scenario Videos & Chat Bot Example
