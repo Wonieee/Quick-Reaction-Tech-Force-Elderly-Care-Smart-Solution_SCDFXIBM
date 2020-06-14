@@ -29,7 +29,7 @@ https://youtu.be/aCYjLmXBKUI
 
 ## Getting started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. The Instructions can be found in the folder 'code'.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. The Instructions can be found in the folder 'code' and all the instruction can be found in the readme.md.
 
 ### Prerequisites
 The things needed to carry on with the project
