@@ -12,9 +12,7 @@ Just 5 newbies trying our hand at acing this hackaton
 1. [Live demo](#live-demo)
 1. [Built with](#built-with)
 1. [Contributing](#contributing)
-1. [Versioning](#versioning)
 1. [Authors](#authors)
-1. [License](#license)
 1. [Acknowledgments](#acknowledgments)
 
 ## Getting started
@@ -27,6 +25,8 @@ The things needed to carry on with the project
 IBM Cloud Account
 ```
 ## Running the tests
+
+## Live Demo
 
 ## Built with
 
