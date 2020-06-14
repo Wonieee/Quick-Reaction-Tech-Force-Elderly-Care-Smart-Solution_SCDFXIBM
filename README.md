@@ -40,11 +40,11 @@ IBM Cloud Account
 
 ## Authors
 The list of people who participated in this project
-1.Tan Jia Dian
-1.Anastasia Patricks
-1.Cai Yong Kang
-1.Lee Jia Zhi
-1.Fariduddin Won
+1. Tan Jia Dian
+1. Anastasia Patricks [PurpleBooth](https://github.com/PurpleBooth)
+1. Cai Yong Kang
+1. Lee Jia Zhi
+1. Fariduddin Won
 
 ## Acknowledgments
 
