@@ -36,16 +36,11 @@ The things needed to carry on with the project
 ```bash
 IBM Cloud Account
 ```
-## Running the tests
-
-## Live Demo
 
 ## Built with
-
-* [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
-* [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
-* [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
 * [IBM Watson Studio](https://cloud.ibm.com/catalog?search=watson%20studio#search_results) - The SmartAI Datalearning used
+* [IBM Auto AI] (https://www.ibm.com/sg-en/cloud/watson-studio/autoai) - For machine learning
+* [IBM Watson Assistant] (https://www.ibm.com/cloud/watson-assistant/) - For chatbot
 * [IBM Speech to Text](https://cloud.ibm.com/catalog?search=text%20to%20speech#search_results) - For converting speech to Text
 * [IBM Text to Speech](https://cloud.ibm.com/catalog?search=text%20to%20speech#search_results) - For converting Text to speech
 
